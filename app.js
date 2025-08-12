@@ -14,7 +14,7 @@ function adicionarAmigo() {
         console.log(amigos);      
           
     }else{
-        alert('Por favor, insira um nome.');
+        alert('Por favor, insira um nome válido');
     }
 }
 
@@ -30,8 +30,8 @@ function colocarNaLista() {
 function sortearAmigo() {
     if(amigos.length > 0) {
         let resultado = document.querySelector('#resultado');
-        resultado.innerHTML = nomeAleatorio();
-        
+        resultado.innerHTML = `O amigo secreto sorteado é: ${nomeAleatorio()}`;
+
     }else {
         alert('Nenhum nome adicionado.');
     }
